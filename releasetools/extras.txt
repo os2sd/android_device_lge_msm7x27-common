@@ -36,6 +36,8 @@ lib/libC2D2.so
 lib/libOpenVG.so
 
 # Extra apps
+priv-app/CMUpdater.apk
+priv-app/CMUpdater.odex
 app/Exchange2.apk
 app/Exchange2.odex
 app/Email.apk
