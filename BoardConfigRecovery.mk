@@ -4,10 +4,11 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_7x16.h\"
 TARGET_NO_SEPARATE_RECOVERY := true
 
 TARGET_NO_INITLOGO := true
-TARGET_RECOVERY_FSTAB := device/lge/msm7x27-common/recovery/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 
+TARGET_RECOVERY_FSTAB := device/lge/msm7x27-common/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_DEVICE_DIRS += device/lge/msm7x27-common
+TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_SUPERSU := true

@@ -7,10 +7,7 @@ PRODUCT_PACKAGES += \
 
 # USBMS for recovery
 PRODUCT_COPY_FILES += \
-    device/lge/msm7x27-common/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
-    device/lge/msm7x27-common/recovery/twrp_int.fstab:recovery/root/etc/twrp_int.fstab \
-    device/lge/msm7x27-common/recovery/twrp_sd.fstab:recovery/root/etc/twrp_sd.fstab \
-    device/lge/msm7x27-common/recovery/init.recovery.msm7x27.rc:root/init.recovery.$(CM_BUILD).rc
+    $(LOCAL_PATH)/recovery/root/init.recovery.msm7x27.rc:root/init.recovery.$(CM_BUILD).rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/CHANGELOG-CM.txt:system/etc/CHANGELOG-CM.txt \
@@ -118,10 +115,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.debuggable=1 \
     ro.allow.mock.location=0
 
-ifneq (CM_EXPERIMENTAL,$(RELEASE_TYPE))
+ifneq (eng,$(TARGET_BUILD_VARIANT))
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.adb.secure=1 \
-    ro.secure=1
+   ro.adb.secure=1 \
+   ro.secure=0
 else
 ADDITIONAL_DEFAULT_PROPERTIES += \
    ro.adb.secure=0 \

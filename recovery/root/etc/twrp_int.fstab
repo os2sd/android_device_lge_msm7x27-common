@@ -1,0 +1,12 @@
+#/mount point       fstype      device                  [options]
+/boot               mtd         boot
+/cache              yaffs2      cache                   flags=backup=1;canbewiped;wipeingui;wipeduringfactoryreset
+/data               yaffs2      userdata                flags=backup=1;canbewiped;wipeingui;wipeduringfactoryreset
+/misc               mtd         misc
+/recovery           mtd         recovery
+/system             yaffs2      system                  flags=backup=1;canbewiped;wipeingui
+/sd-ext             ext4        /dev/block/mmcblk0p2    flags=display="SD-ext";backup=1;canbewiped;wipeingui
+/sdcard             vfat        /dev/block/mmcblk0p1    flags=display="SD Card";storage;wipeingui;settingsstorage;removable
+/os2sd_data         auto     	/dev/block/mmcblk0p4    flags=display="OS2SD Data";backup=0;canbewiped;wipeingui
+/os2sd_system       auto        /dev/block/mmcblk0p2    flags=display="OS2SD System";backup=0;canbewiped;wipeingui
+
