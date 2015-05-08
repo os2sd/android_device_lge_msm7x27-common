@@ -137,6 +137,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.max_starting_bg=6
 
+# Force HighEndGfx mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.force_highendgfx=true
+
 # Inherit qcom/msm7x27
 $(call inherit-product, device/qcom/msm7x27/msm7x27.mk)
 
