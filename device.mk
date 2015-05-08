@@ -137,6 +137,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.max_starting_bg=6
 
+# Enable purgeable assets and KSM by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.purgeable_assets=1 \
+    ro.ksm.default=1
+
 # Force HighEndGfx mode
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.force_highendgfx=true
