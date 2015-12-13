@@ -6,6 +6,4 @@
 /recovery           mtd         recovery
 /system             auto        /dev/block/mmcblk0p2    flags=backup=1;canbewiped;wipeingui
 /sdcard             vfat        /dev/block/mmcblk0p1    flags=display="SD Card";storage;wipeingui;settingsstorage;removable
-/internal_data      yaffs2      userdata                flags=display="Internal Data";backup=0;canbewiped;wipeingui
-/internal_system    yaffs2      system                  flags=display="Internal System";backup=0;canbewiped;wipeingui
 
