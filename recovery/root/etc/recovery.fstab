@@ -9,5 +9,5 @@ misc			/misc		mtd	defaults		recoveryonly
 recovery		/recovery	mtd	defaults		recoveryonly
 
 /dev/block/mmcblk0	auto		auto	defaults		voldmanaged=sdcard0:auto,noemulatedsd
-/dev/block/zram0	none		swap	defaults		zramsize=167772160,swapprio=1
+/dev/block/zram0	none		swap	defaults		zramsize=134217728,swapprio=1
 
