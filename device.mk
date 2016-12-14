@@ -142,10 +142,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.purgeable_assets=1 \
     ro.ksm.default=1
 
-# Prefer 16bpp surface formats 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.prefer_16bpp=1
-
 # Force HighEndGfx mode
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.force_highendgfx=true
