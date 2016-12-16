@@ -4,4 +4,5 @@
     <fraction name="def_window_animation_scale">50%</fraction>
     <fraction name="def_window_transition_scale">50%</fraction>
     <integer name="def_people_lookup">0</integer>
+    <integer name="def_screen_animation_style">1</integer>
 </resources>
